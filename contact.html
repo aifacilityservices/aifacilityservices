@@ -54,7 +54,10 @@
                 </article>
             </div>
 
-            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form class="contact-form endpoint-form" action="" method="POST">
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden-field" aria-hidden="true">
+                <input type="hidden" name="_subject" value="New quote request from AI Facility Services website">
+
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
@@ -92,7 +95,9 @@
                 </div>
 
                 <button type="submit" class="form-submit">Send Message</button>
+                <p class="form-note">Prefer direct support? Call <a href="tel:+14168380333">+1 (416) 838-0333</a> or email <a href="mailto:info@aifacilityservices.ca">info@aifacilityservices.ca</a>.</p>
             </form>
+            <p class="form-note noscript-contact-note">Online form submission is currently unavailable. Please email <a href="mailto:info@aifacilityservices.ca">info@aifacilityservices.ca</a> or call <a href="tel:+14168380333">+1 (416) 838-0333</a>.</p>
         </div>
     </section>
 
@@ -123,5 +128,44 @@
             </div>
         </div>
     </footer>
+    <noscript><style>.contact-form{display:none;}.noscript-contact-note{display:block;}</style></noscript>
+    <script>
+        (function () {
+            var form = document.querySelector('.contact-form');
+            var noScriptNote = document.querySelector('.noscript-contact-note');
+            if (!form) return;
+            var endpoint = window.CONTACT_FORM_ENDPOINT || '';
+            if (endpoint) {
+                try {
+                    var parsedEndpoint = new URL(endpoint, window.location.origin);
+                    var allowedHosts = ['formspree.io', 'formsubmit.co'];
+                    var allowedSameOriginPaths = ['/api/contact'];
+                    var isSameOrigin = parsedEndpoint.origin === window.location.origin &&
+                        allowedSameOriginPaths.indexOf(parsedEndpoint.pathname) !== -1;
+                    var host = parsedEndpoint.hostname.toLowerCase();
+                    var matchesHost = allowedHosts.some(function (baseHost) {
+                        return host === baseHost || host.endsWith('.' + baseHost);
+                    });
+                    var path = parsedEndpoint.pathname;
+                    var isAllowedHost = matchesHost && (
+                        ((host === 'formspree.io' || host.endsWith('.formspree.io')) && /^\\/f\\/[a-zA-Z0-9]+$/.test(path)) ||
+                        ((host === 'formsubmit.co' || host.endsWith('.formsubmit.co')) && /^\\/[^/]+\\/?$/.test(path))
+                    );
+                    if (isSameOrigin || isAllowedHost) {
+                        form.action = parsedEndpoint.href;
+                        form.method = 'POST';
+                        form.style.display = 'block';
+                        if (noScriptNote) noScriptNote.style.display = 'none';
+                        return;
+                    }
+                    console.error('CONTACT_FORM_ENDPOINT is not an approved endpoint:', parsedEndpoint.href);
+                } catch (error) {
+                    console.error('CONTACT_FORM_ENDPOINT is invalid:', endpoint);
+                }
+            }
+            form.style.display = 'none';
+            if (noScriptNote) noScriptNote.style.display = 'block';
+        })();
+    </script>
 </body>
 </html>

@@ -72,6 +72,16 @@ We serve the GTA and surrounding areas including:
 4. **Update Services**:
    - Add or remove service cards in the Services section
 
+5. **Configure Contact Form Endpoint**:
+   - The contact page can use a deployment-provided endpoint via `window.CONTACT_FORM_ENDPOINT`
+   - Load that global before the inline script at the end of `contact.html` executes (for example in the `<head>` or immediately above the inline script)
+   - Define it in a global script, for example:
+     - `window.CONTACT_FORM_ENDPOINT = "https://formspree.io/f/your_form_id";`
+   - Endpoint validation allows only same-origin `/api/contact`, Formspree `/f/<id>` URLs, and FormSubmit single-path endpoints
+   - When configured, the page script automatically switches the form to `POST` using standard browser form encoding
+   - Hidden fields `_honey` and `_subject` in `contact.html` are intended for Formspree/FormSubmit-compatible endpoints
+   - If not configured, the page hides the form and shows direct contact instructions (phone/email)
+
 ## 15+ Years of Excellence
 
 AI Facility Services has been serving the Greater Toronto Area for over 15 years with professional, reliable facility and property maintenance services.

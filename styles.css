@@ -96,8 +96,16 @@ header nav {
     color: var(--accent);
 }
 
+.nav-menu a:focus-visible {
+    color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+}
+
 .hero,
 .page-hero {
+    --hero-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1800&q=80');
     position: relative;
     min-height: 64vh;
     padding: 6rem 1.5rem;
@@ -187,6 +195,12 @@ header nav {
 .btn-secondary:hover {
     border-color: var(--accent);
     color: #ffffff;
+}
+
+.btn:focus-visible,
+.form-submit:focus-visible {
+    outline: 2px solid #8ad8af;
+    outline-offset: 3px;
 }
 
 .section {
@@ -375,6 +389,36 @@ p {
 
 .form-submit:hover {
     background: #34b978;
+}
+
+.form-note {
+    margin-top: 0.9rem;
+    font-size: 0.92rem;
+}
+
+.noscript-contact-note {
+    display: block;
+}
+
+.endpoint-form {
+    display: none;
+}
+
+.form-note a {
+    color: #97e2ba;
+    text-decoration: none;
+}
+
+.form-note a:hover {
+    text-decoration: underline;
+}
+
+.hidden-field {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
 
 footer {
