@@ -4,9 +4,9 @@ Professional website for AI Facility Services - Commercial and Residential Clean
 
 ## Features
 
-- ✨ Modern, vibrant design with responsive layout
+- ✨ Sophisticated modern design with responsive layout
 - 📱 Mobile-friendly interface
-- 🎨 Professional branding with orange, blue, and teal colors
+- 🎨 Professional branding with black, grey, and green colors
 - 📋 Service showcase for commercial and residential offerings
 - 📞 Easy contact and quote request system
 - ⚡ Fast loading and smooth animations
@@ -59,11 +59,11 @@ We serve the GTA and surrounding areas including:
    - Update phone number, email, and service areas as needed
 
 2. **Change Colors**:
-   - Open `styles.css`
+   - Open `styles.css` or `css/style.css`
    - Modify the color variables at the top:
-     - `--primary-color`: Main orange color
-     - `--secondary-color`: Main blue color
-     - `--accent-color`: Teal accent color
+     - `--bg-primary`: Main dark background color
+     - `--bg-secondary`: Section background color
+     - `--accent`: Primary green action color
 
 3. **Add Your Photos**:
    - Replace image URLs in `index.html` with your own photos
