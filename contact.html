@@ -21,7 +21,8 @@
                 <p><strong>Service area</strong><br>Toronto, Mississauga, Brampton, Oakville, Burlington, Hamilton, York Region, Durham Region and surrounding areas.</p>
                 <p><strong>Helpful details to include</strong><br>Property type, city, requested service, whether the work is recurring or one-time, and any timing requirements.</p>
             </aside>
-            <form class="contact-form" action="mailto:info@aifacilityservices.ca" method="post" enctype="text/plain">
+            <form class="contact-form" action="https://formspree.io/f/moeqoqzp" method="POST">
+                <input type="hidden" name="_subject" value="New quote request from AI Facility Services website">
                 <div class="form-card-header"><h2>Request a Free Quote</h2><p>Give us a few details about the property and the work you need. Required fields are marked by the browser when you submit.</p></div>
                 <div class="form-row"><div class="form-group"><label for="name">Name</label><input type="text" id="name" name="Name" autocomplete="name" required></div><div class="form-group"><label for="company">Company / Organization</label><input type="text" id="company" name="Company" autocomplete="organization"></div></div>
                 <div class="form-row"><div class="form-group"><label for="email">Email</label><input type="email" id="email" name="Email" autocomplete="email" required></div><div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="Phone" autocomplete="tel"></div></div>
@@ -30,7 +31,7 @@
                 <div class="form-group"><label for="frequency">Type of service</label><select id="frequency" name="Frequency"><option value="">Select...</option><option>One-time project</option><option>Recurring / ongoing</option><option>Seasonal</option><option>Not sure</option></select></div>
                 <div class="form-group"><label for="message">Tell us what you need</label><textarea id="message" name="Project details" required></textarea></div>
                 <button type="submit" class="form-submit">Send Quote Request</button>
-                <p class="form-note">Temporary setup: submitting opens your email client with the form details. Before launch, replace this with a hosted form endpoint so submissions can be sent directly from the website.</p>
+                <p class="form-note">Prefer to contact us directly? Call <a href="tel:+14168380333">(416) 838-0333</a> or email <a href="mailto:info@aifacilityservices.ca">info@aifacilityservices.ca</a>.</p>
             </form>
         </div></section>
     </main>
