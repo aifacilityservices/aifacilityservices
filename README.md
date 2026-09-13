@@ -72,6 +72,11 @@ We serve the GTA and surrounding areas including:
 4. **Update Services**:
    - Add or remove service cards in the Services section
 
+5. **Contact Form Email Delivery**:
+   - Open `contact.html`
+   - Set the form action to your FormSubmit endpoint format: `https://formsubmit.co/you@example.com`
+   - The current configuration sends submissions to `info@aifacilityservices.ca`
+
 ## 15+ Years of Excellence
 
 AI Facility Services has been serving the Greater Toronto Area for over 15 years with professional, reliable facility and property maintenance services.
