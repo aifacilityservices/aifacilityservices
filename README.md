@@ -50,7 +50,7 @@ We serve the GTA and surrounding areas including:
 1. Go to repository settings
 2. Scroll to "GitHub Pages" section
 3. Select "main" branch as source
-4. Your site will be available at: `https://aifacilityservices.github.io/aifacilityservices`
+4. Your site will be available at: `https://aifacilityservices.github.io`
 
 ## How to Customize
 
@@ -59,11 +59,8 @@ We serve the GTA and surrounding areas including:
    - Update phone number, email, and service areas as needed
 
 2. **Change Colors**:
-   - Open `styles.css`
-   - Modify the color variables at the top:
-     - `--primary-color`: Main orange color
-     - `--secondary-color`: Main blue color
-     - `--accent-color`: Teal accent color
+   - Open `css/style.css`
+   - Update the hex color values used for the header, buttons, and section accents
 
 3. **Add Your Photos**:
    - Replace image URLs in `index.html` with your own photos
@@ -79,4 +76,4 @@ AI Facility Services has been serving the Greater Toronto Area for over 15 years
 ---
 
 **Last Updated**: 2026
-**Website**: aifacilityservices.ca
+**Website**: https://aifacilityservices.github.io
