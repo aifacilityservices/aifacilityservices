@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
 Disallow: /private/
-
-Sitemap: https://aifacilityservices.github.io/aifacilityservices/sitemap.xml
