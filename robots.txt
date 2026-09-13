@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https://aifacilityservices.github.io/sitemap.xml
+Sitemap: https://aifacilityservices.github.io/aifacilityservices/sitemap.xml
 
 # Google
 User-agent: Googlebot
