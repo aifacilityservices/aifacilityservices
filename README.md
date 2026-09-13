@@ -50,7 +50,7 @@ We serve the GTA and surrounding areas including:
 1. Go to repository settings
 2. Scroll to "GitHub Pages" section
 3. Select "main" branch as source
-4. Your site will be available at: `https://aifacilityservices.github.io/aifacilityservices`
+4. Your site will be available at: `https://aifacilityservices.github.io/aifacilityservices/`
 5. Leave out a `CNAME` file until your custom domain DNS is configured
 
 ## How to Customize
@@ -77,4 +77,4 @@ AI Facility Services has been serving the Greater Toronto Area for over 15 years
 ---
 
 **Last Updated**: 2026
-**Website**: https://aifacilityservices.github.io/aifacilityservices
+**Website**: https://aifacilityservices.github.io/aifacilityservices/
