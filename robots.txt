@@ -1,1 +1,4 @@
-User-agent: *\nAllow: /\nDisallow: /private/\n\nSitemap: https://aifacilityservices.ca/sitemap.xml\n\n# Google\nUser-agent: Googlebot\nAllow: /\nCrawl-delay: 0\n\n# Bing\nUser-agent: Bingbot\nAllow: /\nCrawl-delay: 1"
+User-agent: *
+Allow: /
+
+Sitemap: https://aifacilityservices.ca/sitemap.xml
