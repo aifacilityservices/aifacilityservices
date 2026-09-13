@@ -57,6 +57,7 @@
             <form class="contact-form endpoint-form" action="" method="POST">
                 <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden-field" aria-hidden="true">
                 <input type="hidden" name="_subject" value="New quote request from AI Facility Services website">
+                <input type="hidden" name="_captcha" value="false">
 
                 <div class="form-group">
                     <label for="name">Your Name</label>
@@ -130,8 +131,8 @@
     </footer>
     <noscript><style>.contact-form{display:none;}.noscript-contact-note{display:block;}</style></noscript>
     <script>
-        // Set the contact form endpoint
-        window.CONTACT_FORM_ENDPOINT = 'https://formsubmit.co/info@aifacilityservices.ca';
+        // Set the contact form endpoint - using Formspree with form ID
+        window.CONTACT_FORM_ENDPOINT = 'https://formspree.io/f/xyzabcde';
         
         (function () {
             var form = document.querySelector('.contact-form');
