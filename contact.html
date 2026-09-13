@@ -50,6 +50,7 @@
 
             <form class="contact-form" action="https://formsubmit.co/info@aifacilityservices.ca" method="POST">
                 <input type="hidden" name="_subject" value="New AI Facility Services Contact Request">
+                <input type="text" name="_honey" style="display:none">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
@@ -67,7 +68,7 @@
                 
                 <div class="form-group">
                     <label for="service">Service Needed</label>
-                    <select id="service" name="service" required style="width: 100%; padding: 0.8rem; border: 1px solid #0066cc; border-radius: 5px; font-family: inherit; font-size: 1rem; background: white; color: #333;">
+                    <select id="service" name="service" required>
                         <option value="">Select a service...</option>
                         <option value="commercial-cleaning">Commercial Cleaning</option>
                         <option value="residential-cleaning">Residential Cleaning</option>
